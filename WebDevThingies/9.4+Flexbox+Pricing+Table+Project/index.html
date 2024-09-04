@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Default weight, can be adjusted per element */
+  font-style: normal;
+}
+      
+      .pricing-container{
+        display: flex;
+        flex-direction: row;
+        background-color:beige;
+        align-items: center; 
+      }
+      
+/*     
+      .pricing-container>*{
+        align-items: ;
+      } */
+     
+      .innerbox{
+        background-image:url(/9.4+Flexbox+Pricing+Table+Project/Screenshot\ 2024-08-28\ at\ 1.04.26\ PM.png);
+        margin: 10px;
+        border-radius: 10px;
+        width: 300px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        box-shadow: 4px 4px 10px rgba( 0, 10, 0.2); /* Adjust the values for the desired effect */
+        background-size: cover;
+        background-position: center; /* Centers the image */
+
+      }
+      
+
+      .color1{background-image:url(Screenshot\ 2024-08-28\ at\ 8.22.36\ PM.png);}
+      .color2{background-image:url(Screenshot\ 2024-08-28\ at\ 8.17.22\ PM.png);}
+      .color3{background-image:url(./t3img.png);}
+
+
+      .plan-button{
+        background-color: black;
+        color: rgb(63, 63, 63);
+        border-radius: 6px;
+        outline:0px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        font-family: 'Helvetica Neue', sans-serif; /* Modern and clean font */
+        font-weight: 500; /* Medium weight for a balanced look */
+        font-size: 12px; /* Slightly smaller, elegant size */
+        letter-spacing: 0px; /* Slight spacing for a sleek appearance */
+        text-transform: none; /* Keep the text in its original case */
+        background-color: rgba(208, 208, 208, 0.7); /* Semi-transparent overlay color */
+
+      }
+
+      .plan-features { 
+      list-style: none; /* Removes the numbers */
+      padding-left: 0; /* Removes the left padding/margin */
+      margin-left: 0;  /* Ensure the list aligns with other content */
+      }
+
+      .another-background{
+        background-color: rgb(98, 96, 96);
+        border-radius: 10px;
+        margin: 10px;
+        text-align: center;
+      }
+      
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+      }
+      .price {
+}
+
+      .amount {
+          font-size: 36px; /* Large size for the price */
+          font-weight: bold;
+      }
+
+      .currency {
+          font-size: 14px; /* Smaller size for the currency and time period */
+          margin-left: 5px; /* Small space between price and currency */
+          font-weight: normal;
+      }
+      .plan-title{
+        margin-bottom: 20px;
+      }
+
+      .inn-inn-box{
+        background-color: rgba(208, 208, 208, 0.7); /* Semi-transparent overlay color */
+        border-radius: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        color: rgb(63, 63, 63);
+      }
+    
+    </style>
+  </head>
+
+  <body>
+    
+    <div class="pricing-container">
+
+      <div class="another-background">
+      <div class="innerbox color1">
+        <div class= "inn-inn-box">
+        <div class="plan-title">Essential</div>
+
+        <div class="price">
+          <span class="amount">9.99$</span>
+          <span class="currency">/month</span>
+        </div>
+
+        
+        <ul class="plan-features">
+          <li>- 10GB Storage -</li>
+          <li>-1 Use -</li>
+          <li></li>
+        </ul>
+       
+      </div>
+      <button class="plan-button">Sign Up</button>
+      </div>
+     </div>
+
+    <div class="another-background">
+      <div class="innerbox color2">
+        <div class= "inn-inn-box">
+        <div class="plan-title">Standard</div>
+        <div class="price">
+          <span class="amount">19.99$</span>
+          <span class="currency">/month</span>
+      </div>
+        <ul class="plan-features">
+          <li>- 50GB Storage -</li>
+          <li>- 5 Users -</li>
+          <li> - Phone &amp; Email Support -</li>
+        </ul>
+      </div>
+      <button class="plan-button">Sign Up</button>
+    </div>
+    </div>
+
+      <div class="another-background">
+      <div class="innerbox color3">
+        <div class= "inn-inn-box">
+        <div class="plan-title">Premium</div>
+        <div class="price">
+          <span class="amount">49.99$</span>
+          <span class="currency">/month</span>
+      </div>
+        <ul class="plan-features">
+          <li>- 100GB Storage -</li>
+          <li>- 10 Users -</li>
+          <li>- 24/7 Support -</li>
+        </ul>
+      </div>
+      <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+
+
+    </div>
+  </body>
+</html>

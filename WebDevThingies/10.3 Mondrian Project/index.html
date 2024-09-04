@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      display: grid;
+      height: 748px;
+      width: 748px;
+      background-color: rgb(0, 0, 0);
+      grid-template-columns: 320px 352px 59px ;
+      grid-template-rows: 396px 158px 147px 20px  ;
+      gap: 9px;
+      
+    }
+    .redpiece{
+      background-color: red;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row: 1;
+    }
+    .halfblue{
+      background-color: rgb(35, 35, 153);
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row: 2;
+      height: 130px;
+      border-bottom: 10px solid black;
+    }
+
+    .item{
+      background-color:white ;
+    }
+    .specific{
+      grid-column: span 2;
+    }
+    .specific2{
+      grid-row: span 2;
+    }
+    .yelo{
+      background-color: yellow;
+      width: 198px;
+    }
+    .item32{
+      grid-column-start: 3;
+      grid-row-start: 2;
+      grid-row: span 2;
+      background-color: rgb(255, 13, 239);
+    }
+
+
+  </style>
+</head>
+
+
+<body>
+  <!-- Write your HTML here -->
+  <div class='container'>
+    <div class="redpiece"></div>
+    <div class="halfblue"></div>
+    <div class="specific item"></div>
+    <div class="item specific2"></div>
+    <div class="item specific2"></div>
+    <div class="item"></div>
+    <div class="item "></div>
+    <div class="item yelo"></div>
+    <div class="item32"></div>
+
+
+
+
+
+
+
+  </div>
+
+</body>
+
+</html>

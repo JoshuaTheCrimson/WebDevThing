@@ -1,0 +1,69 @@
+<!-- 
+
+5. Create a div to contain the h1, p and img elements. Adjust the margins so that the image and text are centered on the page. 
+  Hint: You horizontally center a div by giving it a width of 50% and a margin-left of 25%.
+  Hint: Set the image to have a width of 100% so it fills the div. 
+6. Read about the text-transform property on MDN docs to make the h1 uppercase with CSS.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html{background-color: black;}
+    /* Write your CSS code here */
+
+    .poster {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 100px;
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+  }
+
+    h1{
+      font-family: "Libre Baskerville", serif;
+      text-align: center;
+      color: white
+    }
+
+    #img{border: 5px solid white;
+      margin-left: 25%;
+      margin-top: 30px;
+    }
+
+    #first{
+      text-align: center;
+      color: white
+    }
+
+    div{
+      align-items: center;
+    }
+    
+    p{color: aliceblue;
+    text-align: center;}
+
+  
+
+  </style>
+</head>
+<body>
+
+<div id="poster">
+
+  <img src="/6.4 Motivation Meme Project 2/assets/images/daenerys.jpeg" id="img">
+  <h1 id="h1"> Hello There</h1>
+  <p>General Kenobi!</p>
+
+
+</div>
+
+</body>
+</html>
