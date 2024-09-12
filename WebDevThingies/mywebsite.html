@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheWebsite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+       .container{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-template-rows: (12,auto);
+        gap: 9px;
+    }
+    .play-regular {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+    .upbar {
+    background-color: rgb(66, 66, 66);
+    grid-column: span 7;
+    height: 65px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Divides into 7 equal columns */
+    align-items: center;
+    padding: 0 20px;
+    }
+
+    .empty{
+        grid-column: span 7;
+        height: 0px;
+    }
+
+    .myimage{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 5;
+        grid-column-end: 5;
+        height: 190px;
+        background-color: rgb(66, 66, 66);
+        border-radius: 40px;
+    }
+    .insidemyimage{
+        background-color: rgb(107, 171, 167);
+        height: 150px;
+        width: 150px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
+    }
+
+    .flexy{
+        display: flex;
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
+    }
+
+    .inside {
+    background-color: rgb(107, 171, 167);
+    height: calc(100% - 40px); /* 40px smaller in height */
+    width: calc(100% - 40px);  /* 40px smaller in width */
+    border-radius: 40px; /* Keeps the border radius for the child box */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    }
+
+    .lefttomyimage{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        height: 190px;
+        background-color: rgb(66, 66, 66);
+        border-radius: 40px;
+    }
+    .rigttomyimage{
+        grid-row-start: 3;
+        grid-row-end: 5;
+        
+        grid-column-start: 6;
+        grid-column-end: 8;
+        height: 380px;
+        background-color: rgb(66, 66, 66);
+        border-radius: 40px;
+    }
+
+    .downtomyimage{
+        grid-row-start: 4;
+        grid-row-end: 6;  
+        grid-column-start: 1;
+        grid-column-end: 6;
+        height: 380px;
+        background-color: rgb(66, 66, 66);
+        border-radius: 40px;
+    }
+
+    .rightdowncorner{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 6;
+        grid-column-end: 8; 
+        height: 190px;
+        background-color: rgb(66, 66, 66);
+        border-radius: 40px;
+    }
+    
+/* Responsive behavior for small screens */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Stacks items vertically */
+        grid-template-rows: auto;   /* Adjust rows dynamically */
+        gap: 20px;                  /* Adds space between items */
+    }
+
+    .upbar, 
+    .myimage, 
+    .lefttomyimage, 
+    .rigttomyimage, 
+    .downtomyimage, 
+    .rightdowncorner {
+        grid-column: 1 / -1;  /* Makes each element span the full width of the container */
+        width: 100%;          /* Ensures the element takes full width */
+        height: auto;         /* Adjust height to fit content dynamically */
+        margin-bottom: 20px;  /* Adds space between items */
+    }
+}
+
+    
+
+    /* Interior *//* Interior *//* Interior *//* Interior *//* Interior *//* Interior *//* Interior */
+
+    .logo {
+  grid-column: 1; /* Places logo in the first part of the grid */
+}
+
+
+.nav-icons a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  justify-self: center; /* Horizontally center each icon in its column */
+  align-self: center; /* Vertically center each icon in its row */
+  transition: transform 0.3s ease; /* Adds a smooth transition for hover effects */
+
+}
+
+.nav-icons {
+  display: contents; /* Make each icon act as a grid child */
+}
+
+.home {
+  grid-column: 2; /* Home in the second column */
+}
+
+.skills {
+  grid-column: 3; /* Skills in the third column */
+}
+
+.projects {
+  grid-column: 4; /* Projects in the fourth column */
+}
+
+.about {
+  grid-column: 5; /* About in the fifth column */
+}
+
+.contact {
+  grid-column: 6; /* Contact in the sixth column */
+}
+
+.background circle{
+
+}
+.nav-icons a:hover {
+  transform: scale(1); /* Slightly increase size on hover */
+}
+
+.nav-icons img {
+  height: 40px;
+  transition: transform 0.3s ease; /* Adds smooth transition to the images as well */
+}
+
+.nav-icons a:hover img {
+  transform: scale(1.2); /* Animates the image on hover */
+}
+
+.colorwhite{
+    color: white;
+ 
+}
+.nav-icons img {
+  height: 40px;
+  filter: invert(100%) brightness(200%);
+  transition: transform 0.3s ease, filter 0.3s ease; /* Also transition the filter on hover */
+}
+
+.nav-icons a:hover img {
+  transform: scale(1.2); /* Slightly increase size on hover */
+  filter: invert(100%) brightness(300%); /* Increase brightness for more hover effect */
+}
+
+/* CONTENT *//* CONTENT *//* CONTENT *//* CONTENT *//* CONTENT *//* CONTENT *//* CONTENT *//* CONTENT */
+
+body{background-color: 
+rgb(227, 166, 155);;}
+
+
+    
+
+</style>
+<body>
+    <div class="container">
+
+        <!-- UP BAR -->  <!-- UP BAR -->  <!-- UP BAR -->  <!-- UP BAR -->  <!-- UP BAR -->    <!-- UP BAR -->
+
+        <div class="upbar">
+            <div class="logo">
+                <img src="Screenshot 2024-09-09 at 1.02.13 PM.png" height="40px">
+            </div>
+            <div class="nav-icons">
+                <a href="#home" class="home colorwhite"><i class="fa fa-home"></i><img src="home.png" height="40px"> </a>
+                <a href="#skills" class="skills"><i class="fa fa-list"></i><img src="svg-rounded_list-512.webp" alt="" height="40px"></a>
+                <a href="#projects" class="projects"><i class="fa fa-folder"></i><img src="Screenshot_2024-09-09_at_10.06.33_PM-removebg-preview.png" alt="" height="40px" ></a>
+                <a href="#about" class="about"><i class="fa fa-user"></i><img src="user-profile-icon.png" height="2px"></a>
+                <a href="#contact" class="contact"><i class="fa fa-phone"></i><img src="phone-call_455705.png"height="40px" alt=""></a>
+            </div>
+        </div>
+                <!--   
+
+
+
+                -->
+        <!-- empty -->  <!-- empty -->  <!-- empty -->  <!-- empty -->  <!-- empty -->
+        <div class="empty">
+        </div>
+        <!--   
+
+
+
+         -->
+        <div class="myimage flexy">
+            <div class="insidemyimage">
+                <p>Centered Content</p>
+            </div>
+        </div>
+
+        
+
+
+        <div class="lefttomyimage play-bold flexy">
+            <div class="inside flexy"><h1>"Cogito Ergo Sum"</h1></div>
+        </div>
+
+
+        <div class="rigttomyimage flexy">
+            <div class="inside"></div>
+        </div>
+
+        <div class="downtomyimage flexy">
+            <div class="inside flexy"></div>
+        </div>
+
+        <div class="rightdowncorner flexy">
+            <div class="inside flexy"></div>  
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
