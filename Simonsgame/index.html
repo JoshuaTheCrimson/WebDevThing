@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(64, 64, 175);
+        }
+        .container_h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 5vh;
+            color: antiquewhite;
+        }
+
+
+        .flex {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .greenbox {
+            background-color: green;
+            width: 25vh;
+            height: 25vh;
+            border-radius: 50px;
+            margin: 20px;
+            border-style: solid;
+            border-color: black;
+            border-width: 10px;
+            transition: transform 0.3s ease;
+        }
+        .greenbox.scale-effect {
+            transform: scale(1.2); /* Scale to 120% */}
+
+            .redbox {
+            background-color: rgb(195, 45, 0);
+            width: 25vh;
+            height: 25vh;
+            border-radius: 50px;
+            margin: 20px;
+            border-style: solid;
+            border-color: black;
+            border-width: 10px;
+            transition: transform 0.3s ease;
+
+        }
+        .redbox.scale-effect {
+            transform: scale(1.2); /* Scale to 120% */
+        }
+
+            .yellowbox {
+                background-color: rgb(220, 220, 16);
+                width: 25vh;
+                height: 25vh;
+                border-radius: 50px;
+                margin: 20px;
+                border-style: solid;
+                border-color: black;
+                border-width: 10px;
+                transition: transform 0.3s ease;
+            }
+
+            .yellowbox.scale-effect {
+                transform: scale(1.2); /* Scale to 120% */
+            }
+
+
+            .bluebox {
+                background-color: rgb(0, 110, 188);
+                width: 25vh;
+                height: 25vh;
+                border-radius: 50px;
+                margin: 20px;
+                border-style: solid;
+                border-color: black;
+                border-width: 10px;
+                transition: transform 0.3s ease;
+            }
+
+            .bluebox.scale-effect {
+                transform: scale(1.2); /* Scale to 120% */
+            }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="game-tracker container_h1 flex">
+        <h1>Game Tracker</h1>
+    </div>
+    <div class="flex">
+        <div class="greenbox mibutton 0"></div>
+        <div class="redbox mibutton 1"></div>
+        <div class="yellowbox mibutton 2"></div>
+        <div class="bluebox mibutton 3"></div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

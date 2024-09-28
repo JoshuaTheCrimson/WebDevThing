@@ -1,0 +1,41 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;  
+}
+
+.winner{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;  
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;  
+    color: rgb(79, 160, 160);
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;  
+    color: rgb(79, 160, 160);
+}
+
+.leftdice{
+    margin-left: 13rem;
+}
+.rightdice{
+    margin-right: 13rem;
+}
+
+
+.h1class{
+    font-family:'lobster',cursive ;
+    font-size: 50px;
+    color: rgb(124, 184, 124);
+}
+
+body{background-color: rgb(3, 1, 27);}

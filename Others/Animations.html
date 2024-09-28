@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.biggerelement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+
+.element{
+    background: rgb(150, 103, 194);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 1.35rem;
+    color:white;
+    
+    animation-duration: 2s;
+    animation-name: spin;
+    animation: spin 2s ease-in-out forwards; /* The 'forwards' keeps the final state */
+    animation-iteration-count: infinite;
+    animation-play-state: paused
+}
+
+.element2{
+    background: rgb(150, 103, 194);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 1.35rem;
+    color:white;
+    
+    animation-duration: 2s;
+    animation-name: boxy;
+    animation: boxy 2s ease-in-out forwards; /* The 'forwards' keeps the final state */
+    animation-iteration-count: infinite;
+
+}
+
+
+
+.element img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.element:hover{
+    animation-play-state: running;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate3d(1, 1, 0, 45deg); /* Rotate around x and y axes */
+        border-radius: 50%;
+    }
+    50%{
+        scale: 2;
+        transform: rotate(0)
+        
+    }
+    100%{
+        transform: rotate(360deg);
+        animation-delay: 50ms;
+        transform: rotate3d(1, 1, 0, 45deg); /* Rotate around x and y axes */
+        border-radius: 50%;
+    }
+
+
+a{}
+
+
+}
+@keyframes boxy{
+    0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);}
+}
+        
+    </style>
+</head>
+
+
+
+<body>
+    <!-- <div class="biggerelement">
+    <div class="element"><img src="Screenshot 2024-09-16 at 7.53.21 PM.png" alt=""></div> -->
+
+    <div class="biggerelement">
+        <a class="element2" href=""> </a>
+    </div>  
+    
+</body>
+</html>
